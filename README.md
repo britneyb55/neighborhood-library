@@ -8,6 +8,7 @@ Currently the Library offers 20 books for residents to choose from.
 
 Books avaliable:
 id:  isbn:             Book title:
+
 1, "978-1400032716", "The Catcher in the Rey"
 2, "978-0743273565", "To Kill a Mockingbird"
 3, "978-0061120084", "Pride andPrejudice"
