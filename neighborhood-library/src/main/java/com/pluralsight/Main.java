@@ -37,6 +37,7 @@ public class Main
         while (userChoice != 3)
         {
             userChoice = homeScreenDisplay();
+
             switch(userChoice)
             {
                 case 1:
@@ -81,20 +82,19 @@ public class Main
     {
         System.out.println();
         System.out.println("Books available");
-        System.out.println("--------------------------");
+        System.out.println("----------------------------------------------------------");
         System.out.println("ID         Isbn                       Book title");
 
-        // for loop to check available loops
         for (int i = 0; i < books.length; i++)
         {
             Book book = books[i];
 
-            if (book.getisCheckedOut() != true)
+            if (book.getIsCheckedOut() != true)
             {
-                System.out.printf("%-10d %-26s %-33s\n", book.getId(),
+                System.out.printf("%-10d %-26s %-33s \n", book.getId(),
                         book.getIsbn(),
                         book.getTitle(),
-                        book.getisCheckedOut(),
+                        book.getIsCheckedOut(),
                         book.getCheckedOutTo());
             }
         }
@@ -125,10 +125,7 @@ public class Main
                     System.out.println("ID         Isbn            Book title              Check out to:");
                     System.out.printf("%-5d %-15s %-30s %-10s \n", book.getId(), book.getIsbn(), book.getTitle(), book.getCheckedOutTo());
                 }
-
             }
-
-
         }
         else if (bookChoice == 0)
         {
@@ -154,7 +151,7 @@ public class Main
         {
             Book book = books[i];
 
-            if(book.getisCheckedOut() != false)
+            if(book.getIsCheckedOut() != false)
             {
                 System.out.printf("%-10d %-20s %-25s %-10s\n", book.getId(),
                         book.getIsbn(),

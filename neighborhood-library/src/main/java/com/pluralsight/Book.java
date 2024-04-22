@@ -48,12 +48,12 @@ public class Book
         this.title = title;
     }
 
-    public boolean getisCheckedOut()
+    public boolean getIsCheckedOut()
     {
         return this.isCheckedOut;
     }
 
-    public void setisCheckedOut(boolean isCheckedOut)
+    public void setIsCheckedOut(boolean isCheckedOut)
     {
         this.isCheckedOut = isCheckedOut;
     }
@@ -86,15 +86,10 @@ public class Book
 
     public void checkIn()
     {
-        if (!isCheckedOut)
-        {
-            System.out.println("This book is available for check out");
-        }
-        else
-        {
+
             setisCheckedOut(false);
             setCheckedOutTo("");
-        }
+
 
 
     }
