@@ -65,7 +65,7 @@ public class Main
     public static int homeScreenDisplay()
     {
         System.out.println();
-        System.out.println("Welcome to the Library");
+        System.out.println("Welcome to the Neighborhood Library");
         System.out.println("1) Show Available Books");
         System.out.println("2) Show Checked Out Books");
         System.out.println("3) Exit");
