@@ -98,6 +98,7 @@ I only print the book Id, book isbn and book title.
 
 
 The next step, is we would like to select a book and in order to select a book we type in the book Id. 
+
 - Enter book id number 20.
 
 After that we enter a name of the person who is cheking out the book 
@@ -116,7 +117,7 @@ int bookChoice = 0;
 
 Once the user chooses a number between 1 and 20, and if that number corresponds to a book in the library, the program asks for the user's first name. Then, it checks out the chosen book under that name and shows the book's details.
 
-if (bookChoice >= 1 && books.length >= bookChoice)
+    if (bookChoice >= 1 && books.length >= bookChoice)
         {
 
             for (int i = 0; i < books.length; i++)
@@ -137,19 +138,24 @@ if (bookChoice >= 1 && books.length >= bookChoice)
         }
 
 After that we are redirect to the neighborhood Library home page
-However we want to see the books that are check out and if book 20 if still check out.
-We enter option 2
-We see that book id of 20 is check out by Liz. 
+However we want to see the list of  books that are currently check out and if book id 20 is check out.
+
+- We enter option 2
+
+The image below illustrated that the book id of 20 is currently check out by Liz. 
 
 
 ![Home screen](images/showcheckout.jpeg)
 
-However we want to check in the book and to do this we enter c. 
-And enter the book  id Liz checked out. 
-Enter 20
-We are then redirect to the neighborhood Library home page
+However we want to check in the book and to do this we enter c. Then we enter the book id. 
+
+- Enter c
+- Enter 20
+
+Finally when we are finish we are then redirect to the neighborhood Library home page
 
 ![Home screen](images/checkin.jpeg)
+
 
 
 ![Home screen](images/neighborhood.jpeg)
