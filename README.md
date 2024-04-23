@@ -74,8 +74,8 @@ When enterning 1 we are presented with a list of books that are currently availa
 In order to succesfully display books that are available I begin writing want I want to accomplish and for this my thought process was to display books that are current not check out. 
 
 In other words books that are not equal to true.
-false = book avaliable
-true = book not avaliable
+- false = book avaliable
+- true = book not avaliable
 
 When a book is not equal to true it is able to go inside the body of the if statment and print the book infomation. 
 
@@ -102,6 +102,8 @@ Enter book id number 20
 After that we enter a name of the person who is cheking out the book 
 Enter Liz
 We are shown that the book id 20 is checked out to Liz
+
+
 ![Home screen](images/EX.jpeg)
 
 To successfully determine what the resident wants to do, I established two options: checking out a book or returning to the neighborhood library homepage. I created a variable called bookChoice, initialized to 0. It accepts a number between 1 and 20, representing the book ID, or entering 0 to exit. 
@@ -135,6 +137,8 @@ After that we are redirect to the neighborhood Library home page
 However we want to see the books that are check out and if book 20 if still check out.
 We enter option 2
 We see that book id of 20 is check out by Liz. 
+
+
 ![Home screen](images/showcheckout.jpeg)
 
 However we want to check in the book and to do this we enter c. 
