@@ -99,8 +99,11 @@ I only print the book Id, book isbn and book title.
 
 The next step, is we would like to select a book and in order to select a book we type in the book Id. 
 - Enter book id number 20.
+
 After that we enter a name of the person who is cheking out the book 
+
 - Enter Liz
+
 We are then shown that the book id 20 is checked out to Liz
 
 
