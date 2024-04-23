@@ -65,20 +65,13 @@ The homeScreenDisplay function now takes in the resposible for displaying my hom
     
 --------------
 
-Enter 1
+Now we Enter 1
+
+When enterning 1 we are presented with a list of books that are currently available for use for the resident. 
 
 ![availablebooks](images/availablebooks.jpeg)
 
-In order to succesfully display books availablility I first sketch out an outline on how I want my book availablity to appear for the user. 
-
-` public static void availableBookList(Book[] books)
-    {
-        System.out.println();
-        System.out.println("Books available");
-        System.out.println("----------------------------------------------------------");
-        System.out.println("ID         Isbn                       Book title"); `
-
-After that I begin writing want I want to accomplish and for this my thought process was to display books that are current not check out. 
+In order to succesfully display books that are available I begin writing want I want to accomplish and for this my thought process was to display books that are current not check out. 
 
 In other words books that are not equal to true.
 false = book avaliable
@@ -96,25 +89,27 @@ I only print the book Id, book isbn and book title.
 
             if (book.getisCheckedOut() != true)
             {
-                System.out.printf("%-10d %-26s %-33s\n", book.getId(),
+                System.out.printf("%-10d %-26s %-33s\n", 
+                        book.getId(),
                         book.getIsbn(),
-                        book.getTitle(),
-                        book.getisCheckedOut(),
-                        book.getCheckedOutTo());
+                        book.getTitle();
             }
         }
 
-Once I have that I want to know if the user would want to check out a book or return to the neighborhood library home page and for this I create a variable called bookChoice initialized to 0. 
+
+Now for the next step, we would like to select a book and in order to select a book we type in the book Id. 
+Enter book id number 20 
+After that we enter a name of the person who is cheking out the book 
+Enter Liz
+We are shown that the book id 20 is checked out to Liz
+![Home screen](images/EX.jpeg)
+
+To successfully determine what the resident wants to do, I established two options: checking out a book or returning to the neighborhood library homepage. I created a variable called bookChoice, initialized to 0. It accepts a number between 1 and 20, representing the book ID, or entering 0 to exit. 
 
 int bookChoice = 0;
 
-        System.out.println();
-        System.out.println(" Select a book you'll like to check out by entering the book ID");
-        System.out.println("Exit - enter 0");
-        System.out.println("Select your choice by entering a number that are displayed above:");
-        bookChoice = Integer.parseInt(userInput.nextLine());
 
-Once I recieved the user choiceBook if a user inputs a number between 1 from 20 for 
+Once the user chooses a number between 1 and 20, and if that number corresponds to a book in the library, the program asks for the user's first name. Then, it checks out the chosen book under that name and shows the book's details.
 
 if (bookChoice >= 1 && books.length >= bookChoice)
         {
@@ -135,6 +130,22 @@ if (bookChoice >= 1 && books.length >= bookChoice)
                 }
             }
         }
+
+After that we are redirect to the neighborhood Library home page
+However we want to see the books that are check out and if book 20 if still check out.
+We enter option 2
+We see that book id of 20 is check out by Liz. 
+![Home screen](images/showcheckout.jpeg)
+
+However we want to check in the book and to do this we enter c. 
+And enter the book  id Liz checked out. 
+Enter 20
+We are then redirect to the neighborhood Library home page
+
+![Home screen](images/checkin.jpeg)
+
+
+![Home screen](images/neighborhood.jpeg)
 
 Built with 
 Java

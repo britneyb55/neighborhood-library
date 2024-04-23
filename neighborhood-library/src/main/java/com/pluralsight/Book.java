@@ -78,7 +78,7 @@ public class Book
         }
         else{
             setCheckedOutTo(name);
-            setisCheckedOut(true);
+            setIsCheckedOut(true);
         }
 
 
@@ -87,7 +87,7 @@ public class Book
     public void checkIn()
     {
 
-            setisCheckedOut(false);
+            setIsCheckedOut(false);
             setCheckedOutTo("");
 
 

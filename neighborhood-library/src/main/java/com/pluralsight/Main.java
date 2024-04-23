@@ -60,6 +60,9 @@ public class Main
                     break;
             }
         }
+        System.out.println();
+        System.out.println("press enter to continue");
+        String enter = userInput.nextLine();
 
     }
 
@@ -85,17 +88,16 @@ public class Main
         System.out.println("----------------------------------------------------------");
         System.out.println("ID         Isbn                       Book title");
 
-        for (int i = 0; i < books.length; i++)
+        for(int i = 0; i < books.length; i++)
         {
             Book book = books[i];
 
             if (book.getIsCheckedOut() != true)
             {
-                System.out.printf("%-10d %-26s %-33s \n", book.getId(),
+                System.out.printf("%-10d %-26s %-33s \n",
+                        book.getId(),
                         book.getIsbn(),
-                        book.getTitle(),
-                        book.getIsCheckedOut(),
-                        book.getCheckedOutTo());
+                        book.getTitle());
             }
         }
 
@@ -137,6 +139,7 @@ public class Main
             availableBookList(books);
         }
 
+
     }
 
 
@@ -153,7 +156,7 @@ public class Main
 
             if(book.getIsCheckedOut() != false)
             {
-                System.out.printf("%-10d %-20s %-25s %-10s\n", book.getId(),
+                System.out.printf("%-10d %-18s %-30s %-10s\n", book.getId(),
                         book.getIsbn(),
                         book.getTitle(),
                         book.getCheckedOutTo());
